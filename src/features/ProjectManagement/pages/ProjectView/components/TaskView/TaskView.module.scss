@@ -1,0 +1,69 @@
+.taskView{
+    font-size: 14px;
+    height: 420px;
+    overflow-y: auto;
+    .taskNonBillable{
+        width: 51%;
+       .thName{
+           width: 43%;
+           text-align: left;
+           padding-top: 10px;
+           padding-bottom: 3px;
+           border-bottom: 1px solid var(--gray-4);
+       }
+       .thHour{
+           width: 12%;
+           padding-top: 10px;
+           padding-bottom: 3px;
+           border-bottom: 1px solid var(--gray-4);
+       }
+       .thTotal{
+           text-align: left;
+           padding-top: 12px;
+           padding-bottom: 3px;
+           border-bottom: 1px solid var(--gray-4);
+       }
+       .thTime{
+            padding-bottom: 3px;
+            border-bottom: 1px solid var(--gray-4);
+       }
+       .tdName{
+           width: 30%;
+           padding-top: 10px;
+       }
+       .tdTime{
+           width: 20%;
+           text-align: center;
+           padding-top: 10px;
+       }
+    }
+    .taskBillable{
+        width: 100%;
+        margin-bottom: 40px;
+        th{
+            padding-top: 10px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid var(--gray-4);
+        }
+        .thName{
+            width: 35%;
+            text-align: left;
+        }
+        .thHour{
+            width: 15%;
+        }
+        .thBillable{
+            width: 50%;
+        }
+        .thTotal{
+            text-align: left;
+        }
+        .tdName{
+            padding-top: 12px;
+        }
+        .tdTime, .tdPercent{
+            text-align: center;
+            padding-top: 12px;
+        }
+    }
+}

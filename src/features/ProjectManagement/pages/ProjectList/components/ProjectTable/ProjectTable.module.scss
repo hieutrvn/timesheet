@@ -1,0 +1,205 @@
+.projectTable{
+    color: var(--black-7);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    overflow-wrap: break-word;
+    background-color: var(--white-2);
+    background-clip: border-box;
+    border: 0px solid var(--black-6);
+    border-radius: 0.75rem;
+    box-shadow: var(--black-8) 0rem 0.25rem 0.375rem -0.0625rem, var(--black-9) 0rem 0.125rem 0.25rem -0.0625rem;
+    overflow: visible;
+    .client{
+        margin-top: -30px;
+        padding: 22px 16px;
+        opacity: 1;
+        background: #F9FAFB;
+        color: var(--black-4);
+        font-size: 18px;
+        font-weight: 700;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .project{
+        padding-top: 10px;
+        max-height: 495px;
+        overflow-y:scroll;
+        &::-webkit-scrollbar{
+            width: 15px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: var(--gray-3);
+            border-radius: 10px;
+        }
+
+        table{
+            width: 100%;
+        }
+        thead{
+            th{
+                padding: 12px 24px;
+                opacity: 1;
+                background: transparent;
+                box-shadow: none;
+                font-size: 10px;
+                color: var(--gray-1);
+                border-bottom: 0.0625rem solid var(--white-5);
+            }
+            .thProjectName{
+                width: 17.5%;
+                text-align: left;
+            }
+            .thMember{
+                width: 25%;
+            }
+            .thProjectType{
+                width: 15%;
+            }
+            .thTime{
+                width: 20%;
+            }
+            .thStatus, .thAction, .thClient{
+                width: 7.5%;
+            }
+        }
+        tbody{
+            td{
+                text-align: center;
+                padding: 12px 24px;
+                opacity: 1;
+                background: transparent;
+                color: rgb(52, 71, 103);
+                box-shadow: none;
+                font-size: 0.875rem;
+                border-bottom: 0.0625rem solid var(--white-5);
+            }
+            .tdProjectName{
+                text-align: left;
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .tdMember{
+                text-align: left;
+                .nameMember{
+                    border: none;
+                    background-color: var(--blue-2);
+                    color: var(--white-1);
+                    font-size: 10px;
+                    font-weight: 600;
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 0.8rem;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                }
+                .countMember{
+                    border: none;
+                    background-color: var(--orange-1);
+                    color: var(--white-1);
+                    font-size: 10px;
+                    font-weight: 600;
+                    padding: 0.25rem 0.6rem;
+                    border-radius: 0.8rem;
+                    cursor: pointer;
+                }
+                .pms{
+                    background-color: var(--blue-6);
+                    margin-right: 5px;
+                }
+            }
+            .tdProjectType{
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .tdTime{
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .tdClient{
+                width: 124px;
+            }
+            .tdStatus{
+                button{
+                    border: none;
+                    background-color: rgba(84, 214, 44, 0.16);
+                    color: #229A16;
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding: 0.4rem 0.5rem;
+                    border-radius: 6px;
+                    width: 66px;
+                }
+                .btnDeactive{
+                    color: #B72136;
+                    background-color: rgba(255, 72, 66, 0.16);
+                }
+            }
+            .tdAction{
+                .round{
+                    border: none;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                        color: var(--gray-1);
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.actionItem{
+    a{
+        display: flex;
+        align-items: center;
+    svg{
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+    }
+    }
+    display: flex;
+    align-items: center;
+    svg{
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+    }
+}
+.actionView{
+    > div{
+        display: flex;
+        align-items: center;
+        color: var(--violet-1);
+    }
+}
+.actionDelete{
+    color: var(--red-1);
+    svg{
+        color: var(--black-4);
+    }
+}
+.actionActive{
+    color: var(--green-1);
+}
+.dropdownAction{
+    background-color: var(--white-2);
+    box-shadow: var(--black-8) -0.6rem 0.25rem 0.575rem -0.0625rem, var(--black-9) 0.6rem 0.125rem 0.575rem -0.0625rem;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    .actionItem{
+        border-radius: 2px;
+        padding: 4px;
+        &:hover{
+            background-color: var(--white-3);
+        }
+    }
+}

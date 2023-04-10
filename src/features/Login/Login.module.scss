@@ -1,0 +1,93 @@
+.login{
+    display: flex;
+    background-color: var(--white-1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    .left{
+        position: relative;
+        .logo{
+            position: absolute;
+            top: 40px;
+            left: 50px;
+        img {
+            border: 1px solid rgba(145, 158, 171, 0.24) ;
+            border-radius: 5px;
+            width: 60px;
+        }
+        }
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.2), 0 12px 24px -4px rgba(145, 158, 171, 0.12);
+        background-color: var(--white-1);
+        h3{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    }
+
+    .right{
+        max-width: 480px;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 12px 0;
+        .contrainer{
+            width: 480px;
+            .header{
+                margin-bottom: 40px;
+                h2{
+                    margin-bottom: 8px;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                a{
+                    color: var(--blue-3);
+                    font-weight: 600;
+                    text-decoration: underline;
+                }
+            }
+            .info{
+                .form{
+                    .label{
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                    .remember{
+                        width: 320px;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 32px;
+                        p{
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                    .btnAuthen{
+                        width: 100%;
+                        margin-bottom: 8px;
+                        padding: 16px 12px;
+                        transition: all .2s ease-in;
+                        &:hover{
+                            background-image: linear-gradient(195deg, var(--blue-2), var(--blue-3));
+                            box-shadow: var(--blue-7) 0rem 0.875rem 1.625rem -0.75rem, var(--blue-8) 0rem 0.25rem 1.4375rem 0rem, var(--blue-9) 0rem 0.5rem 0.625rem -0.3125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.error{
+    color: var(--red-2);
+    margin-left: 6px;
+}

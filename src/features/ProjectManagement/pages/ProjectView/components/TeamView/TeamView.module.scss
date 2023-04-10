@@ -1,0 +1,33 @@
+.teamView{
+    font-size: 14px;
+    height: 420px;
+    overflow-y: auto;
+    .teamTable{
+        width: 100%;
+        th{
+            padding-top: 10px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid var(--gray-4);
+        }
+        .thName{
+            width: 35%;
+            text-align: left;
+        }
+        .thHour{
+            width: 15%;
+        }
+        .thBillable{
+            width: 50%;
+        }
+        .thTotal{
+            text-align: left;
+        }
+        .tdName{
+            padding-top: 12px;
+        }
+        .tdTime, .tdPercent{
+            text-align: center;
+            padding-top: 12px;
+        }
+    }
+}

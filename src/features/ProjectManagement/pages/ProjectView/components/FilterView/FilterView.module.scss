@@ -1,0 +1,59 @@
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    .itemLeft{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .btnAngle{
+            cursor: pointer;
+            padding: 6px 8px;
+            background-color: var(--blue-2);
+            border: none;
+            color: var(--white-1);
+            border-radius: 4px;
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+            &:hover{
+                background-color: var(--blue-3);
+            }
+        }
+        p{
+            margin-left: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--blue-1);
+        }
+    }
+    .itemRight{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.modal{
+    .btnModal{
+        margin-top: 30px;
+        text-align: right;
+        .btnCancel{
+            border: 1px solid var(--blue-3);
+            color: var(--blue-3);
+            background-color: transparent;
+            font-weight: 700;
+            border-radius: 6px;
+            padding: 11px;
+            cursor: pointer;
+            margin-right: 10px;
+            &:hover{
+                background-color: var(--white-5);
+            }
+        }
+    }
+    .fromDate{
+        margin-bottom: 20px;
+    }
+}
